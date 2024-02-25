@@ -5,12 +5,12 @@ export class AuthController {
   constructor(private authService: AuthService) {}
   @Post('register')
   register() {
-    this.authService.work();
+    this.authService.register();
     return 'register success';
   }
   @Post('login')
   login() {
-    this.authService.work();
+    this.authService.login();
     return 'login success';
   }
 }
